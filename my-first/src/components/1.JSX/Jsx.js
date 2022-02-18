@@ -1,6 +1,16 @@
 import React from 'react'
 
-const element = <h1>Hello this is an Javascript element</h1>
+/* Skapa ett objekt */
+const user = {
+	firstName: 'Johanna',
+	lastName: 'Vega'
+	}
+
+// Element sparad i variabel
+const element = 
+	<h1>
+	Hello {user.firstName}
+	</h1>;
 
 let Jsx = () => {
   return (
