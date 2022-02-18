@@ -53,7 +53,7 @@ let Jsx = () => {
 			  {/* Display elements through looping an array */}
 			<ul>
 				{
-					elements.map ( element => {
+					elements.map( element => {
 						return <li>{element}</li>
 					}) 
 				}
@@ -77,3 +77,12 @@ let Jsx = () => {
 
 export default Jsx /* Denna komponent importeras i App.js inom function App() */
 
+/*
+* General rules & considerations when using JSX
+* - Using camelcase when using attributes, ie onClick
+* - When adding HTML classes, defined keyword is className = '' 
+* - If tag is empty, you may close it, like XML. ie <div />
+* - JSX prevents Injenction attacks. It is safe to embed user in JSX (in vanilla JS, you may never save data from userform, through innerHTML.)
+* - JSX may contain children:
+* - Only one element may be returned, if several elements are not wrapped in a div. 
+*/
