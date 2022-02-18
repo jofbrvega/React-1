@@ -6,11 +6,28 @@ const user = {
 	lastName: 'Vega'
 	}
 
+let formatFullName = (user) => {
+	return user.firstName + " " + user.lastName;
+}
+
+
 // Element sparad i variabel
-const element = 
+const element1 =
 	<h1>
-	Hello {user.firstName}
+		This is the first example: Hello {user.firstName + " " + user.lastName}
 	</h1>;
+
+const element2 = 
+	<h1>
+	This is the second example: Hello {formatFullName(user)}
+	</h1>;
+
+function getGreeting(user) {
+	if (user) {
+		return <h1> Hello, {formatFullName(user)} </h1>;
+	}
+	return <h1>Hello stranger</h1>;
+} 
 
 let Jsx = () => {
   return (
@@ -20,7 +37,12 @@ let Jsx = () => {
 		{'Hello Johanna Vega'}
 
 			  { /* Display an element through a variable. Det är som att vi skriver ut <h1>Hello this is an Javascript element</h1> här */}
-			  {element}
+			  {element1}
+
+			  {element2}
+
+			  { /* Display an element through a function. Om vi tar bort user och behåller () då kommer "Hello stranger"*/}
+			  {getGreeting(user)} 
 		</div>
 	</div>
   )
