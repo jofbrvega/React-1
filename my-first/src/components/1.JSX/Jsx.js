@@ -27,7 +27,13 @@ function getGreeting(user) {
 		return <h1> Hello, {formatFullName(user)} </h1>;
 	}
 	return <h1>Hello stranger</h1>;
-} 
+}
+
+// Elements in array
+let elements = []
+ for (let i = 1; i <= 5; i++) {
+	elements.push(i);
+}
 
 let Jsx = () => {
   return (
@@ -42,7 +48,17 @@ let Jsx = () => {
 			  {element2}
 
 			  { /* Display an element through a function. Om vi tar bort user och behåller () då kommer "Hello stranger"*/}
-			  {getGreeting(user)} 
+			  {getGreeting(user)}
+
+			  {/* Display elements through looping an array */}
+			<ul>
+				{
+					elements.map ( element => {
+						return <li>{element}</li>
+					}) 
+				}
+			</ul>
+
 		</div>
 	</div>
   )
