@@ -3,18 +3,27 @@ import './App.css';
 import Jsx from './components/1.JSX/Jsx';
 import HelloFunctionComponent from './components/2.ComponentsAndProps/HelloFunctionComponent';
 import HelloClassComponent from './components/2.ComponentsAndProps/HelloClassComponent';
+import Comment from './components/2.ComponentsAndProps/comments/Comment';
 
-function App() { // Detta är en förälder komponent
+
+function App() {
+  const comment = {
+    date: new Date(),
+    text: 'I hope you enjoy learning React!',
+    author: {
+      name: 'Hello Kitty',
+      avatarUrl: 'http://placekitten.com/g/64/64'
+    }
+  };
+
   return (
     <div className="App">
-     <HelloClassComponent name="Jane Doe">
-       <div>This is a text sent through props.children</div>
-       </HelloClassComponent> 
-
-      {/* Detta är en underkomponent */}
-      <HelloFunctionComponent name="Johanna"/>
-
-     {/*  <Jsx /> */}
+     {/* Components and props  */}
+        <Comment 
+        date={comment.date}
+        text={comment.text}
+        author={comment.author}
+        />
     </div>
   );
 }
