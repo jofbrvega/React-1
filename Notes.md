@@ -65,6 +65,6 @@ b1.
 
 Varför använder vi oss av props? 
         a. Ett exempel är som SCSS. Man använder sig av props, för att enkelt använda det på olika platser. 
-        Vi återanvänder den, istället för att upprepa den på olika ställen genom att kalla på komponenten.
+        Vi återanvänder den, istället för att upprepa den på olika ställen genom att kalla på komponenten. / Reusable codes
 
 
