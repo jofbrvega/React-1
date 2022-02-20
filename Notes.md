@@ -23,7 +23,7 @@ När man vill stänga ned react, finns två alternativ.
 
 
 Props: det finns två typer av props. 
-a. Props in function 
+a. Props in function (använd helst denna över classcomponent)
         function App() {
         return (
         <div className="App">
@@ -39,7 +39,7 @@ a1.     import React from 'react'
         )
         }
 
-b. Props in class
+b. Props in class (man har dock försökt att arbeta bort detta)
         function App() { // Detta är en förälder komponent
         return (
         <div className="App">

@@ -4,14 +4,15 @@ import Jsx from './components/1.JSX/Jsx';
 import HelloFunctionComponent from './components/2.ComponentsAndProps/HelloFunctionComponent';
 import HelloClassComponent from './components/2.ComponentsAndProps/HelloClassComponent';
 import Comment from './components/2.ComponentsAndProps/comments/Comment';
+import Avatar from './components/2.ComponentsAndProps/comments/Avatar';
 
 
 function App() {
   const comment = {
     date: new Date(),
-    text: 'I hope you enjoy learning React!',
+    text: 'This is my first comment',
     author: {
-      name: 'Hello Kitty',
+      name: 'Johanna',
       avatarUrl: 'http://placekitten.com/g/64/64'
     }
   };
@@ -24,6 +25,8 @@ function App() {
         text={comment.text}
         author={comment.author}
         />
+
+        <Avatar user={comment.author}/>
     </div>
   );
 }
