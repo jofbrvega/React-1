@@ -20,6 +20,12 @@ När man vill stänga ned react, finns två alternativ.
         a. killall node (i terminalen)
         b. CTRL + C (i terminalen)
 
+React Router DOM 6
+Är ett tillägg 
+För att köra igång och installera den kör då (i terminalen):
+        npm install react-router-dom
+        npm start 
+
 
 
 Props: det finns två typer av props. 
@@ -66,5 +72,7 @@ b1.
 Varför använder vi oss av props? 
         a. Ett exempel är som SCSS. Man använder sig av props, för att enkelt använda det på olika platser. 
         Vi återanvänder den, istället för att upprepa den på olika ställen genom att kalla på komponenten. / Reusable codes
+
+
 
 
