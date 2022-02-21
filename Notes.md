@@ -21,7 +21,7 @@ När man vill stänga ned react, finns två alternativ.
         b. CTRL + C (i terminalen)
 
 React Router DOM 6
-Är ett tillägg 
+Är ett tillägg som gör det möjligt att navigera mellan olika sidor. 
 För att köra igång och installera den kör då (i terminalen):
         npm install react-router-dom
         npm start 
