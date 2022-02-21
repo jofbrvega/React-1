@@ -22,5 +22,19 @@ setInterval (
   1000 //  Varje 1 sec
  )
 
+// Att stoppa ett interval
+const increment = () => {
+  counter++
+  console.log(counter);
+
+  if (counter === 10){
+    clearInterval(counterID)
+  }
+}
+const counterID = setInterval (
+  increment,
+  1000
+)
+
 
 
