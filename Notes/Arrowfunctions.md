@@ -1,5 +1,5 @@
-Det finns olika sätt att ska arrow functions 
-
+// ##### Arrow functions #####
+ 
 const arrowFunc1 = () => {
         console.log('arrowFunc1')
 } 
