@@ -73,6 +73,7 @@ Varför använder vi oss av props?
         a. Ett exempel är som SCSS. Man använder sig av props, för att enkelt använda det på olika platser. 
         Vi återanvänder den, istället för att upprepa den på olika ställen genom att kalla på komponenten. / Reusable codes
 
-
-
-
+React-router-DOM
+Ska skriva kommando i terminalen. Men måste öppna en ny terminal. Den omsluter allting. 
+ a. npm install react-router-dom
+ b. import { BrowserRouter, Routes, Route} from "react-router-dom"; 
