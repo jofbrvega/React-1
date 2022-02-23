@@ -76,4 +76,16 @@ Varför använder vi oss av props?
 React-router-DOM
 Ska skriva kommando i terminalen. Men måste öppna en ny terminal. Den omsluter allting. 
  a. npm install react-router-dom
- b. import { BrowserRouter, Routes, Route} from "react-router-dom"; 
+ b. import { BrowserRouter, Routes, Route} from "react-router-dom";
+ c. npm start
+
+Navigering i samband med react. <link>
+ I en ny fil under mappen components:
+  a. import {link} from 'react-router-dom'
+  b. function NAV() {
+          return (
+                  <div>
+                        <link to="/">Home</link>
+                  </div>
+          )
+  }
